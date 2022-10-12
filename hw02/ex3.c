@@ -40,14 +40,23 @@ int main(int argc, char *argv[]){
 		scanf("%s", s[i].name);
 		printf("input score >> ");
 		scanf("%d", &s[i].score);
-		total_score += s[i].score;
+		//total_score += s[i].score;
 	}
 	
 	fp = fopen("hw02stu.dat", "w+");
+	//printf("%d \n", s->score);
+	//printf("i: %d\n", i);
 	
-	fwrite(&s1, sizeof(struct student), i, fp);
-	fread(s2, sizeof(struct student), i, fp);
+	if(fwrite(&s, sizeof(s), i, fp) != i)
+		printf("write error\n");
+	rewind(fp);
+	fread(&s1, sizeof(s), i, fp);
+	printf("s2 %d\n %s\n %d\n", s1->sno, s1->name, s1->score);
 	
+	//total score from s1
+	for(int j = 0; j<stu_num; j++){
+		total_score += s[i].score;
+	}
 	//get avg
 	avg_score = (total_score/stu_num);
 	printf("avg score: %.1f\n", avg_score);
