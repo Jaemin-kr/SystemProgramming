@@ -43,7 +43,7 @@ int main(int argc, char *argv[]){
 		total_score += s[i].score;
 	}
 	
-	fp = fp = fopen("hw02stu.dat", "w+");
+	fp = fopen("hw02stu.dat", "w+");
 	
 	fwrite(&s1, sizeof(struct student), i, fp);
 	fread(s2, sizeof(struct student), i, fp);
