@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <sys/stat.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(int argc, char *argv[]){
     int i;
@@ -33,3 +34,17 @@ int main(int argc, char *argv[]){
     }
     exit(0);
 }
+/*
+struct stat{
+    mode_t st_mode;
+    ino_t st_ino;
+    dev_t st_dev;
+    nlink_t st_nlink;
+    uid_t st_uid;
+    gid_t st_gid;
+    off_t st_size;
+    time_t st_atime;
+    time_t st_mtime;
+    time_t st_ctime;
+}
+*/
