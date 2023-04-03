@@ -305,7 +305,7 @@ size: 16394
 - inode의 indexing
 : inode에는 어느위치에 data block이 존재하는지에 대한 정보를 가지고 있으며 파일의 크기가 크다면 단일간접리스트를 생성하여 통로를 확장시킨다. → 용량은 늘어나지만 데이터에 접근할 때 소요되는 시간은 증가한다.
 
-![Untitled](Ch03%20File%20IO(%E1%84%91%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%85%E1%85%A7%E1%86%A8)%20566793d18e654930a10ee5d14c55eaac/Untitled.png)
+![Untitled](Ch03%20File%20IO(파일%20입출력)%20566793d18e654930a10ee5d14c55eaac/Untitled.png)
 
 /etc/inittab에 접근하는 방법
 
@@ -358,7 +358,7 @@ size: 16394
 
 ---
 
-![Untitled](Ch03%20File%20IO(%E1%84%91%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%85%E1%85%A7%E1%86%A8)%20566793d18e654930a10ee5d14c55eaac/Untitled%201.png)
+![Untitled](Ch03%20File%20IO(파일%20입출력)%20566793d18e654930a10ee5d14c55eaac/Untitled%201.png)
 
 ## dup( ) and dup2( )
 
@@ -378,7 +378,7 @@ int dup2(int fildes, int filedes2);
 - dup2()
 : 비어있는 FD중 가장 낮은 FD를 filedes2에 복제함
 
-![Untitled](Ch03%20File%20IO(%E1%84%91%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%85%E1%85%A7%E1%86%A8)%20566793d18e654930a10ee5d14c55eaac/Untitled%202.png)
+![Untitled](Ch03%20File%20IO(파일%20입출력)%20566793d18e654930a10ee5d14c55eaac/Untitled%202.png)
 
 ## sync(), fsync(), fdatasync()
 
