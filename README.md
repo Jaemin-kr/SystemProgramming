@@ -1,5 +1,5 @@
 # SystemProgramming
-2022-2 System Programming 내용정리 입니다.
+2022-2 System Programming 내용정리
 
 
 ### [Ch02. Linux System](https://github.com/Jaemin-kr/SystemProgramming/tree/main/Ch02.%20Unix%20System%20Overview)
